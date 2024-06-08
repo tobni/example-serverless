@@ -1,4 +1,4 @@
-from aws.example_rest_api.api.get_item import lambda_handler
+from aws.python.example_rest_api.api.get_item import lambda_handler
 
 
 def test_retrieve_item_from_lambda_handler(lambda_context):

@@ -1,11 +1,11 @@
 from unittest.mock import patch
 
-from aws.example_rest_api.api.manage_items import lambda_handler
-from aws.example_rest_api.models.item import Item
+from aws.python.example_rest_api.api.manage_items import lambda_handler
+from aws.python.example_rest_api.models.item import Item
 
 
 @patch(
-	'aws.example_rest_api.api.manage_items.items',
+	'aws.python.example_rest_api.api.manage_items.items',
 	{2: Item(item_id=2, name='delete_me', description='delete_me')},
 )
 def test_delete_item(lambda_context):
@@ -37,7 +37,7 @@ def test_create_item(lambda_context):
 
 
 @patch(
-	'aws.example_rest_api.api.manage_items.items',
+	'aws.python.example_rest_api.api.manage_items.items',
 	{9: Item(item_id=9, name='change_me', description='change_me')},
 )
 def test_update_item(lambda_context):

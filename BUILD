@@ -11,3 +11,8 @@ python_requirements(
     },
 )
 
+package_json(
+    name="package_json",
+    scripts=[node_build_script("build", output_files=["handler/handler.zip"], extra_env_vars=["PATH"])],
+    dependencies=["aws/javascript"]
+)

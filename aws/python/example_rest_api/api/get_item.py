@@ -1,7 +1,7 @@
 from aws_lambda_powertools import Logger
 from aws_lambda_powertools.event_handler import ApiGatewayResolver, Response
 
-from aws.example_rest_api.models.item import Item
+from aws.python.example_rest_api.models.item import Item
 
 app = ApiGatewayResolver()
 logger = Logger()

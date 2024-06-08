@@ -6,6 +6,8 @@ backend_packages = [
   "pants.backend.awslambda.python",
   "pants.backend.experimental.python.lint.ruff.check",
   "pants.backend.experimental.python.lint.ruff.format",
+  "pants.backend.experimental.javascript",
+  "pants.backend.experimental.javascript.lint.prettier",
 ]
 
 [python]
